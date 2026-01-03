@@ -12,18 +12,33 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('my-angular-app');
 
+  ImagePath: string;
+
+  constructor() {
+    //image location
+    this.ImagePath = '/assets/lama.jpg'
+  }
+
   profile = {
     name: 'Anil Lama',
     title: 'Senior Software Engineer',
     description: 'Software Developer | Building Scalable Microservices with Java & Spring Boot',
     email: 'alamacs19@gmail.com',
-    location: 'Dallas, TX'
+    location: 'Dallas, TX',
+    aboutMe: `Senior Software Engineer with strong experience in Java, Spring Boot, Angular, and microservices. I specialize in designing and developing scalable, secure backend systems, with a focus on clean architecture and performance.
+    
+    My work includes building RESTful APIs for seamless service communication, integrating Apache Kafka for real-time data streaming, and optimizing PostgreSQL for efficient data storage and query performance. I enjoy collaborating with cross-functional teams to deliver reliable, production-ready solutions that support business goals.
+    
+    I hold a Bachelor of Science in Computer Science from California State University, East Bay, and bring a solid full-stack background across Java, Angular, Kafka, and microservices-based systems. Outside of work, I enjoy staying current with new technologies, refining system design skills, traveling, and spending quality time with family.`
   };
 
   skills = {
-    languages: ['TypeScript', 'Python', 'Go'],
+    languages: ['Java', 'SQL', 'PL/SQL', 'Python', 'C', 'C++'],
     backend: ['Node.js', 'PostgreSQL', 'Redis'],
-    cloud: ['AWS', 'Kubernetes', 'Docker']
+    cloud: ['Docker', 'Kubernetes'],
+    frameworks: ['Spring', 'Spring Boot', 'Hibernate', 'JPA', 'IntelliJ IDEA', 'Cursor', 'Eclipse'],
+    webTechnologies: ['HTML5', 'CSS3', 'JavaScript', 'Angular', 'AJAX', 'JSP'],
+    databases: ['Oracle', 'SQl Server', 'PostgreSQL', 'MySQL']
   };
 
   experience = [
@@ -56,4 +71,10 @@ export class App {
       'Developed backend services for high-value financial transactions. Created REST APIs, optimized Oracle SQL queries, implemented logging and auditing, and automated builds using Jenkins and Maven.'
   }];
 
+  certifications = [
+  {
+    name: 'CS50 Wrb Programming with Python and JavaScript - Harvard University',
+    link: 'https://certificates.cs50.io/21b17cff-65b4-47d6-aa26-dff78345d42d.pdf?size=letter'
+  }
+];
 }

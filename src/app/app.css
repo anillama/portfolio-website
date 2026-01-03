@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: #0b1220;
   color: #e5e7eb;
 }
@@ -35,11 +35,13 @@ body {
 .left-panel h1 {
   margin: 10px 0 4px;
   color: #e3e8f1;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 .left-panel h2 {
   font-weight: 400;
   color: #9ca3af;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 .description {
@@ -67,6 +69,8 @@ body {
 
 section {
   margin-bottom: 50px;
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 h3 {
@@ -92,14 +96,15 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  color: #9ca3af;
 }
 
 .chip {
   padding: 6px 14px;
-  background: #111827;
+  background: #262e3d;
   border-radius: 999px;
   font-size: 14px;
-  border: 1px solid #1f2937;
+  border: 1px solid #39414e;
 }
 
 /* TIMELINE */
@@ -134,7 +139,7 @@ h3 {
 .dot {
   width: 10px;
   height: 10px;
-  background: #e3e8f1;
+  background: #656e78;
   border-radius: 50%;
   position: relative;
   top: 6px;
@@ -188,4 +193,55 @@ h3 {
 .social-icons a:hover svg {
   fill: #ffffff;
 }
+
+.about-text {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cert-list li {
+  margin-bottom: 8px;
+}
+
+.cert-list a {
+  color: #9aa4b2;
+  text-decoration: none;
+}
+
+.cert-list a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #9aa4b2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.about-text {
+  white-space: pre-line;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+
+
+
 
